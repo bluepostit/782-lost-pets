@@ -7,5 +7,14 @@
   <%= f.text_field :color %>
   <%= f.label :found_at %>
   <%= f.date_field :found_at %>
-  <%= f.submit %>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
+
+
+<%= simple_form_for pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :species %>
+  <%= f.input :color %>
+  <%= f.input :found_at %>
+  <%= f.submit class: "btn btn-primary" %>
 <% end %>

@@ -1,11 +1,14 @@
-<h1>Found Pets</h1>
-<p>Recently found pets. Help us get them home!</p>
+<div class="container">
 
-<ul>
-  <% @pets.each do |pet| %>
-    <li>
-      <%= link_to "#{pet.color} #{pet.species}", pet_path(pet) %>, found <%= pet.found_days_ago %> days ago
+  <h1>Found Pets</h1>
+  <p>Recently found pets. Help us get them home!</p>
 
-    </li>
-  <% end %>
-</ul>
+  <ul>
+    <% @pets.each do |pet| %>
+      <li>
+        <%= link_to "#{pet.color} #{pet.species}", pet_path(pet) %>, found <%= pet.found_days_ago %> days ago
+
+      </li>
+    <% end %>
+  </ul>
+</div>
