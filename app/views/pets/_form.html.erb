@@ -1,0 +1,11 @@
+<%= form_for(pet) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :species %>
+  <%= f.text_field :species %>
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+  <%= f.label :found_at %>
+  <%= f.date_field :found_at %>
+  <%= f.submit %>
+<% end %>
